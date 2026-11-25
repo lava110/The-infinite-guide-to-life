@@ -176,6 +176,12 @@ function auditProductionDatabase() {
     process.exit(1);
   }
 
+  if (expiredCount > 0 || dueSoonCount > 0 || unreachablePortalCount > 0) {
+    console.log(
+      `\n🚨 时效/链路巡检告警：已超期 ${expiredCount} 条 · 30天内到期 ${dueSoonCount} 条 · 官网链接不可达 ${unreachablePortalCount} 条，请人工抽检复核。`
+    );
+  }
+
   console.log('\n✅ 全库生产路径审计通过（FullVerifiedPathSchema 锁死校验 0 报错）。');
 }
 
