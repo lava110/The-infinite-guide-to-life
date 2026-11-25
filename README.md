@@ -1,11 +1,64 @@
-<div align="center">
+# 《人生无限：地球漫游指南》破局沙盘
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+基于 **L1–L5 分轨核验引擎** 的生存与职业破局决策沙盘，旨在打破升学分流与职场转行中的信息差，帮助不同处境的普通人看清法定零加价硬成本、真实到手收入阶梯、头号劝退红线与黑中介溢价陷阱。
 
-  <h1>Built with AI Studio</h2>
+## 核心能力
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **33 条全量已核验路径总库（双轨制）**
+  - **轨 A（硬事实）**：年龄/学历/体检准入红线、官方 DIY 零加价硬成本明细、L1/L2 法定政策依据与官方直达门户。
+  - **轨 B（体感切片）**：新手→熟手→高阶三阶段真实净收入阶梯、生理/心理/契约劝退红线、黑中介“照妖镜”成本对比与 DIY 实操步骤。
+- **时效驱动雷达与超期自动降级**
+  - 全库挂载 `freshness_meta`（招生/网报窗口月份、复核周期、下次重验截止日与官网链路实测快照）。
+  - 超过复核截止日的路径自动从绿灯降级为黄灯并弹出提醒；首页自动呈现当月窗口、下月预告与三段式时效筛选。
+- **多维决策矩阵与现金流沙盘**
+  - **学生升学 8 年 PK 矩阵**：覆盖中考/高考分流与高校应届专项，算清 8 年家庭总支出与毕业起步账。
+  - **成人转行 PK 与断粮爆仓压测**：联动“手头总资金 × 家庭月消耗 × 准备周期”，一眼标红断粮风险。
+  - **12 个月逐月现金流推演表**：按月推演净储蓄曲线与回本拐点。
+- **受控 AI 个性化处境诊断顾问（服务端全栈）**
+  - 仅在已核验路径总库范围内给出首选/备选/保底方案、排除原因与针对性防诈铁律；所有官方裸价、门户链接与状态均由服务端从标准台账强挂载，防库外幻觉。
+  - 支持 SSE 流式保活推送与带路径引用的受控多轮追问。
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 技术栈
 
-</div>
+- **前端**：React 19 + TypeScript + Vite + Tailwind CSS v4 + Lucide Icons
+- **服务端**：Express + Vite Middleware (`server.ts`) + `@google/genai` + Zod 严格校验
+- **数据治理与巡检**：Zod 生产 Schema 硬门禁 + 官网白名单 + 独立死链巡检 CLI
+
+## 快速开始
+
+### 1. 安装依赖
+
+```bash
+npm install
+```
+
+### 2. 配置环境变量
+
+复制 `.env.example` 为 `.env`，并填入你的服务端密钥（`.env` 已被 `.gitignore` 忽略，请勿提交到仓库）：
+
+```bash
+cp .env.example .env
+```
+
+```env
+GEMINI_API_KEY="你的_GEMINI_API_KEY"
+```
+
+### 3. 启动本地全栈开发服务器
+
+```bash
+npm run dev
+```
+
+默认监听 `http://localhost:3000`。
+
+## 常用脚本
+
+| 命令 | 说明 |
+| --- | --- |
+| `npm run dev` | 启动 Express + Vite 全栈开发服务（端口 3000） |
+| `npm run build` | 构建前端生产包至 `dist/` |
+| `npm run start` | 生产环境启动 `server.ts` |
+| `npm run lint` | 执行 TypeScript 全量类型校验 (`tsc --noEmit`) |
+| `npm run audit:paths` | 执行全库路径 Zod Schema、白名单、唯一性与时效门禁审计 |
+| `npm run check:links` | 对全库官方门户执行真实 HTTP 链路探测并更新 `src/data/linkHealthReport.json` |

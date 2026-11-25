@@ -1,0 +1,6 @@
+{
+  "name": "人生无限：地球漫游指南 · 破局沙盘",
+  "description": "基于 L1-L5 分轨核验引擎的生存与职业破局沙盘，提供法定零加价硬成本拆解、真实净收入阶梯、头号劝退红线与黑中介照妖镜对比。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

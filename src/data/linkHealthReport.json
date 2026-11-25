@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-11-24 05:16:54 UTC",
+  "total_urls": 28,
+  "summary": {
+    "HEALTHY": 10,
+    "REDIRECTED": 4,
+    "RESTRICTED_BOT": 7,
+    "UNREACHABLE": 7
+  },
+  "results": {
+    "https://csp.msa.gov.cn": {
+      "url": "https://csp.msa.gov.cn",
+      "status": "UNREACHABLE",
+      "http_status": 503,
+      "final_url": "https://csp.msa.gov.cn/",
+      "latency_ms": 1890,
+      "note": "HTTP 503 Service Unavailable",
+      "used_by_paths": [
+        "PATH_001",
+        "PATH_066"
+      ]
+    },
+    "http://cnse.e-cqs.cn": {
+      "url": "http://cnse.e-cqs.cn",
+      "status": "UNREACHABLE",
+      "latency_ms": 10002,
+      "note": "请求超时 (>10s)",
+      "used_by_paths": [
+        "PATH_002",
+        "PATH_008",
+        "PATH_046"
+      ]
+    },
+    "https://www.chsi.com.cn": {
+      "url": "https://www.chsi.com.cn",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "https://www.chsi.com.cn/",
+      "latency_ms": 1994,
+      "used_by_paths": [
+        "PATH_003"
+      ]
+    },
+    "https://gaokao.chsi.com.cn": {
+      "url": "https://gaokao.chsi.com.cn",
+      "status": "RESTRICTED_BOT",
+      "http_status": 412,
+      "final_url": "https://gaokao.chsi.com.cn/",
+      "latency_ms": 1869,
+      "note": "返回 HTTP 412（常见政务/Cloudflare 防爬拦截，请浏览器人工复核）",
+      "used_by_paths": [
+        "PATH_004"
+      ]
+    },
+    "https://www.make-it-in-germany.com": {
+      "url": "https://www.make-it-in-germany.com",
+      "status": "REDIRECTED",
+      "http_status": 200,
+      "final_url": "https://www.make-it-in-germany.com/en/",
+      "latency_ms": 1342,
+      "note": "已重定向至 https://www.make-it-in-germany.com/en/",
+      "used_by_paths": [
+        "PATH_005",
+        "PATH_036"
+      ]
+    },
+    "https://www.mohrss.gov.cn": {
+      "url": "https://www.mohrss.gov.cn",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "https://www.mohrss.gov.cn/",
+      "latency_ms": 1471,
+      "used_by_paths": [
+        "PATH_006"
+      ]
+    },
+    "https://xfhyjd.119.gov.cn": {
+      "url": "https://xfhyjd.119.gov.cn",
+      "status": "RESTRICTED_BOT",
+      "http_status": 405,
+      "final_url": "https://xfhyjd.119.gov.cn/",
+      "latency_ms": 7262,
+      "note": "返回 HTTP 405（常见政务/Cloudflare 防爬拦截，请浏览器人工复核）",
+      "used_by_paths": [
+        "PATH_007"
+      ]
+    },
+    "https://cx.mem.gov.cn": {
+      "url": "https://cx.mem.gov.cn",
+      "status": "RESTRICTED_BOT",
+      "http_status": 405,
+      "final_url": "https://cx.mem.gov.cn/",
+      "latency_ms": 4253,
+      "note": "返回 HTTP 405（常见政务/Cloudflare 防爬拦截，请浏览器人工复核）",
+      "used_by_paths": [
+        "PATH_009"
+      ]
+    },
+    "http://osta.mohrss.gov.cn": {
+      "url": "http://osta.mohrss.gov.cn",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "http://osta.mohrss.gov.cn/",
+      "latency_ms": 2943,
+      "used_by_paths": [
+        "PATH_010"
+      ]
+    },
+    "https://www.gfbzb.gov.cn": {
+      "url": "https://www.gfbzb.gov.cn",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "https://www.gfbzb.gov.cn/",
+      "latency_ms": 4455,
+      "used_by_paths": [
+        "PATH_011",
+        "PATH_015"
+      ]
+    },
+    "https://rczp.china-railway.com.cn": {
+      "url": "https://rczp.china-railway.com.cn",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "https://rczp.china-railway.com.cn/",
+      "latency_ms": 8582,
+      "used_by_paths": [
+        "PATH_012"
+      ]
+    },
+    "https://gaokao.chsi.com.cn/gxzxbm": {
+      "url": "https://gaokao.chsi.com.cn/gxzxbm",
+      "status": "RESTRICTED_BOT",
+      "http_status": 412,
+      "latency_ms": 1373,
+      "note": "返回 HTTP 412（常见政务/Cloudflare 防爬拦截，请浏览器人工复核）",
+      "used_by_paths": [
+        "PATH_013"
+      ]
+    },
+    "https://xibu.youth.cn": {
+      "url": "https://xibu.youth.cn",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "https://xibu.youth.cn/",
+      "latency_ms": 759,
+      "used_by_paths": [
+        "PATH_021"
+      ]
+    },
+    "https://xfyzl.119.gov.cn": {
+      "url": "https://xfyzl.119.gov.cn",
+      "status": "RESTRICTED_BOT",
+      "http_status": 405,
+      "final_url": "https://xfyzl.119.gov.cn/",
+      "latency_ms": 2665,
+      "note": "返回 HTTP 405（常见政务/Cloudflare 防爬拦截，请浏览器人工复核）",
+      "used_by_paths": [
+        "PATH_023"
+      ]
+    },
+    "http://81rc.81.cn": {
+      "url": "http://81rc.81.cn",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "http://81rc.81.cn/",
+      "latency_ms": 942,
+      "used_by_paths": [
+        "PATH_024"
+      ]
+    },
+    "https://immi.homeaffairs.gov.au": {
+      "url": "https://immi.homeaffairs.gov.au",
+      "status": "RESTRICTED_BOT",
+      "http_status": 403,
+      "final_url": "https://immi.homeaffairs.gov.au/",
+      "latency_ms": 292,
+      "note": "返回 HTTP 403（常见政务/Cloudflare 防爬拦截，请浏览器人工复核）",
+      "used_by_paths": [
+        "PATH_031"
+      ]
+    },
+    "https://www.immigration.govt.nz": {
+      "url": "https://www.immigration.govt.nz",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "https://www.immigration.govt.nz/",
+      "latency_ms": 1486,
+      "used_by_paths": [
+        "PATH_032"
+      ]
+    },
+    "https://www.universitaly.it": {
+      "url": "https://www.universitaly.it",
+      "status": "REDIRECTED",
+      "http_status": 200,
+      "final_url": "https://www.universitaly.it/en",
+      "latency_ms": 265,
+      "note": "已重定向至 https://www.universitaly.it/en",
+      "used_by_paths": [
+        "PATH_034"
+      ]
+    },
+    "https://pmplatform.chinese.cn": {
+      "url": "https://pmplatform.chinese.cn",
+      "status": "UNREACHABLE",
+      "http_status": 404,
+      "final_url": "https://pmplatform.chinese.cn/",
+      "latency_ms": 568,
+      "note": "HTTP 404 Not Found",
+      "used_by_paths": [
+        "PATH_035"
+      ]
+    },
+    "https://birp.szcourt.gov.cn": {
+      "url": "https://birp.szcourt.gov.cn",
+      "status": "UNREACHABLE",
+      "latency_ms": 534,
+      "note": "fetch failed (ECONNRESET)",
+      "used_by_paths": [
+        "PATH_041"
+      ]
+    },
+    "https://outlier.ai": {
+      "url": "https://outlier.ai",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "https://outlier.ai/",
+      "latency_ms": 92,
+      "used_by_paths": [
+        "PATH_054"
+      ]
+    },
+    "https://teach.italki.com": {
+      "url": "https://teach.italki.com",
+      "status": "REDIRECTED",
+      "http_status": 200,
+      "final_url": "https://teach.italki.com/zh-cn",
+      "latency_ms": 416,
+      "note": "已重定向至 https://teach.italki.com/zh-cn",
+      "used_by_paths": [
+        "PATH_056"
+      ]
+    },
+    "http://www.cpta.com.cn": {
+      "url": "http://www.cpta.com.cn",
+      "status": "RESTRICTED_BOT",
+      "http_status": 405,
+      "final_url": "http://www.cpta.com.cn/",
+      "latency_ms": 1972,
+      "note": "返回 HTTP 405（常见政务/Cloudflare 防爬拦截，请浏览器人工复核）",
+      "used_by_paths": [
+        "PATH_063"
+      ]
+    },
+    "http://www.sasac.gov.cn": {
+      "url": "http://www.sasac.gov.cn",
+      "status": "UNREACHABLE",
+      "latency_ms": 10002,
+      "note": "请求超时 (>10s)",
+      "used_by_paths": [
+        "PATH_065"
+      ]
+    },
+    "https://yz.chsi.com.cn": {
+      "url": "https://yz.chsi.com.cn",
+      "status": "HEALTHY",
+      "http_status": 200,
+      "final_url": "https://yz.chsi.com.cn/",
+      "latency_ms": 1700,
+      "used_by_paths": [
+        "PATH_067"
+      ]
+    },
+    "https://tdxl.chsi.com.cn": {
+      "url": "https://tdxl.chsi.com.cn",
+      "status": "REDIRECTED",
+      "http_status": 200,
+      "final_url": "https://tdxl.chsi.com.cn/tdxlsqxt/index.html",
+      "latency_ms": 5039,
+      "note": "已重定向至 https://tdxl.chsi.com.cn/tdxlsqxt/index.html",
+      "used_by_paths": [
+        "PATH_071"
+      ]
+    },
+    "https://uom.caac.gov.cn": {
+      "url": "https://uom.caac.gov.cn",
+      "status": "UNREACHABLE",
+      "latency_ms": 10001,
+      "note": "请求超时 (>10s)",
+      "used_by_paths": [
+        "PATH_058"
+      ]
+    },
+    "https://www.cadc.net.cn": {
+      "url": "https://www.cadc.net.cn",
+      "status": "UNREACHABLE",
+      "latency_ms": 2938,
+      "note": "fetch failed (UNABLE_TO_VERIFY_LEAF_SIGNATURE)",
+      "used_by_paths": [
+        "PATH_060"
+      ]
+    }
+  }
+}
